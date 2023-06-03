@@ -1,0 +1,88 @@
+2023-06-03 17:26:08 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\utils\log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 45, in get_queryset
+    queryset = queryset.order_by(*ordering)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 2178, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 1681, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_date' into field. Choices are: article_text, author, author_id, category, comment, head_name, id, postcategory, rate, time_in, type
+2023-06-03 17:26:08 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\core\servers\basehttp.py:212 - "GET /news/ HTTP/1.1" 500 100606
+2023-06-03 17:26:35 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\utils\log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 45, in get_queryset
+    queryset = queryset.order_by(*ordering)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 2178, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 1681, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_date' into field. Choices are: article_text, author, author_id, category, comment, head_name, id, postcategory, rate, time_in, type
+2023-06-03 17:26:35 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\core\servers\basehttp.py:212 - "GET /news/ HTTP/1.1" 500 100606
+2023-06-03 17:27:08 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\utils\log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 45, in get_queryset
+    queryset = queryset.order_by(*ordering)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 2178, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 1681, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_date' into field. Choices are: article_text, author, author_id, category, comment, head_name, id, postcategory, rate, time_in, type
+2023-06-03 17:27:08 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\core\servers\basehttp.py:212 - "GET /news/ HTTP/1.1" 500 100606
+2023-06-03 17:28:40 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\utils\log.py:241 - Internal Server Error: /news/
+Traceback (most recent call last):
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "E:\Work\Portal\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+  File "E:\Work\Portal\venv\lib\site-packages\django\views\generic\list.py", line 45, in get_queryset
+    queryset = queryset.order_by(*ordering)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\query.py", line 1659, in order_by
+    obj.query.add_ordering(*field_names)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 2178, in add_ordering
+    self.names_to_path(item.split(LOOKUP_SEP), self.model._meta)
+  File "E:\Work\Portal\venv\lib\site-packages\django\db\models\sql\query.py", line 1681, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'post_date' into field. Choices are: article_text, author, author_id, category, comment, head_name, id, postcategory, rate, time_in, type
+2023-06-03 17:28:40 [ERROR] E:\Work\Portal\venv\lib\site-packages\django\core\servers\basehttp.py:212 - "GET /news/ HTTP/1.1" 500 100606

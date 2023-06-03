@@ -14,6 +14,7 @@ class PostFilter(django_filters.FilterSet):
         model = Post
 
         fields = {
-            'head_name': ['icontains'],
-           'author': ['in'],
+            'post_title': ['icontains'],
+            'post_date': ['lte'],
+            'post_text': ['icontains']
  }
