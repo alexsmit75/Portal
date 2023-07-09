@@ -60,7 +60,6 @@ POST = [
     (news, 'НОВОСТЬ')
 ]
 
-
 class Post(models.Model):
     post_author = models.ForeignKey('Author', on_delete=models.CASCADE)
     post_choice = models.CharField(max_length=2,
@@ -125,3 +124,7 @@ class BaseRegisterForm(UserCreationForm):
                   "email",
                   "password1",
                   "password2",)
+class NewsPortalCategory(models.Model):
+    news_category = models.ForeignKey(Post, on_delete=models.CASCADE)
+    news_portal = models.ForeignKey(Category, on_delete=models.CASCADE)
+    # Create your models here.
